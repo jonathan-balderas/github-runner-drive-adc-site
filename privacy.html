@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy practices for GitHub Runner Drive ADC, a private Google Drive transcript-staging integration.">
+  <title>Privacy Policy — GitHub Runner Drive ADC</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-head"><div class="frame head-inner">
+    <a class="brand" href="./">GitHub Runner Drive ADC</a>
+    <nav aria-label="Main navigation"><a href="./">About</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+  </div></header>
+  <main class="frame body-content">
+    <p class="eyebrow">Data protection and transparency</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: October 9, 2026</p>
+    <p class="intro">This policy describes the Google Drive data handling of <strong>GitHub Runner Drive ADC</strong>, an independently operated integration for a private artifact-processing workflow. It also describes this informational website.</p>
+    <h2>1. Information accessed</h2>
+    <p>The application uses a Google authorized-user grant scoped to <code>https://www.googleapis.com/auth/drive.file</code>. The operator explicitly selects a transcript-materialization folder using Google Picker. Under this grant, the integration can obtain the selected folder's metadata and create application-authorized transcript files there.</p>
+    <p>The wider internal artifact-processing system may separately access authorized audio/video source files, file metadata, and derived content through a distinct Google Drive control identity. That control identity is not the same as the limited authorized-user OAuth credential described above.</p>
+    <h2>2. Purpose and use of data</h2>
+    <p>Access is used to check the selected folder's permissions, create derived transcripts, verify file identity and contents, and organize these files at the operator's managed Google Drive destinations. Source media may be processed by an operator-controlled local transcription runtime to produce those transcripts. Content is not used for advertising or unrelated profiling.</p>
+    <h2>3. Storage and security</h2>
+    <p>Google Drive stores the authorized source and derived files. The OAuth refresh credential is maintained on an operator-controlled host outside public repositories and supplied to the processing container as a read-only mounted file. A separate ephemeral Google identity is used for workflow control tasks. The public website does not store OAuth secrets, source media, or transcripts.</p>
+    <p>Reasonable technical restrictions are used to reduce unnecessary access, including application-bounded OAuth scope, explicit folder selection, and checks of managed file identity and contents. No storage or transmission system can promise absolute security.</p>
+    <h2>4. Sharing and third parties</h2>
+    <p>The integration is not offered as a data marketplace and does not sell Google user data or share it for advertising. Google provides Drive storage and OAuth services. GitHub provides workflow coordination infrastructure and hosting for this informational website; operational status metadata may be processed through workflow systems. Transcript bodies and OAuth secrets are not intentionally published to this website or a public source repository.</p>
+    <p>The integration's use and transfer of information received from Google APIs is limited to providing or improving its user-facing functionality and other uses allowed under the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including applicable Limited Use requirements.</p>
+    <h2>5. Retention and deletion</h2>
+    <p>Derived files remain in the operator's managed Google Drive storage until removed or retained under the applicable artifact lifecycle policy. This application does not claim a fixed universal retention period. The operator can delete managed content in accordance with that policy. Local credentials are replaced or removed when access is no longer required or is revoked.</p>
+    <h2>6. Revoking authorization</h2>
+    <p>The authorizing Google account owner can revoke the application's access from the Google Account's <a href="https://myaccount.google.com/connections">third-party connections</a> controls. Revocation prevents future authorized-user access once effective; it does not automatically delete existing Google Drive files already created or managed by the workflow.</p>
+    <h2>7. This website</h2>
+    <p>The informational pages do not include analytics scripts, interactive forms, advertising trackers, or custom cookies. Standard server requests and access logs may be handled by the website hosting provider according to its own policies.</p>
+    <h2>8. Updates and contact</h2>
+    <p>This policy may be updated if the processing architecture or data practices change. The effective date above will change when a revision is published. For questions or privacy-related requests, contact the application operator using the support email displayed on the Google OAuth consent screen.</p>
+    <hr>
+    <p><a href="./">Return to the homepage</a> · <a href="terms.html">Terms of Service</a></p>
+  </main>
+  <footer class="site-foot"><div class="frame foot-inner"><span>Independently operated. Not affiliated with or endorsed by Google or GitHub.</span><span><a href="./">About</a><a href="terms.html">Terms</a></span></div></footer>
+</body>
+</html>

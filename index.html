@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GitHub Runner Drive ADC is an independently operated Google Drive integration for a private artifact and transcript-processing workflow.">
+  <title>GitHub Runner Drive ADC — About</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-head"><div class="frame head-inner">
+    <a class="brand" href="./">GitHub Runner Drive ADC</a>
+    <nav aria-label="Main navigation"><a href="./" aria-current="page">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </div></header>
+  <main>
+    <section class="hero"><div class="frame">
+      <p class="eyebrow">Independent, operator-managed integration</p>
+      <h1>Private artifact processing, with limited Google Drive access.</h1>
+      <p class="lead">GitHub Runner Drive ADC supports an operator-controlled workflow that turns authorized source media into derived transcripts and organizes the resulting files in Google Drive. The application is an internal utility, not a general-purpose public file service.</p>
+      <div class="pills"><span class="pill">Google Drive</span><span class="pill">Limited OAuth scope</span><span class="pill">Self-hosted processing</span></div>
+    </div></section>
+    <div class="frame body-content">
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="panel"><h2>1. Limited authorization</h2><p>An authorized operator grants the Google Drive <code>drive.file</code> scope and selects the designated transcript-staging folder through Google Picker.</p></div>
+        <div class="panel"><h2>2. Transcript materialization</h2><p>The integration uses the authorized-user credential to create derived transcript files in that selected staging folder.</p></div>
+        <div class="panel"><h2>3. Controlled file handling</h2><p>A separate, independently authorized control identity validates file identity and contents before moving files to their managed destinations.</p></div>
+        <div class="panel"><h2>4. Operator management</h2><p>Workflow execution, access management, and lifecycle decisions are controlled by the operator rather than visitors to this website.</p></div>
+      </div>
+      <h2>Why Google Drive authorization is requested</h2>
+      <p>The integration requests <code>https://www.googleapis.com/auth/drive.file</code> to work with the specific application-authorized files and create the derived transcript in the operator-selected folder. It does not ask the authorized-user OAuth grant for unrestricted access to every file in a Google Drive account.</p>
+      <p>Separate internal control-plane access is used to manage previously authorized source and derived files. This is not an OAuth sign-in or callback website; the public pages here only explain how the integration operates.</p>
+      <div class="notice"><strong>Privacy by design.</strong> This informational website has no sign-in form, tracking scripts, or data-upload interface. Transcript contents, OAuth credentials, and private runner settings are not published on this site.</div>
+      <h2>Data practices and support</h2>
+      <p>Read the <a href="privacy.html">Privacy Policy</a> for the categories of Google data involved, processing and storage details, retention, and how to revoke access. You can contact the operator using the support email presented on the Google OAuth consent screen.</p>
+      <a class="cta" href="privacy.html">Read the Privacy Policy</a>
+    </div>
+  </main>
+  <footer class="site-foot"><div class="frame foot-inner"><span>Independently operated. Not affiliated with or endorsed by Google or GitHub.</span><span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></span></div></footer>
+</body>
+</html>
